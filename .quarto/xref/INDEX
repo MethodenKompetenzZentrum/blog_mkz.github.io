@@ -52,5 +52,8 @@
   },
   "menu/curses/R_rookie/index.qmd": {
     "index.html": "0d730807"
+  },
+  "posts/test/index.qmd": {
+    "index.html": "6941c59b"
   }
 }
