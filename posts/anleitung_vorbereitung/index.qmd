@@ -3,6 +3,7 @@ title: "HowToBlog #1: setup work environment"
 author: "Marcel Hanschmann"
 date: "2024-01-21"
 categories: [HowToBlog]
+doi: xx.xxxx/xxxxxx
 freeze: true
 ---
 
