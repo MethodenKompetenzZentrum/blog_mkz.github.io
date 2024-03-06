@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.4.547">
+<meta name="generator" content="quarto-1.4.551">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -79,9 +79,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -215,7 +215,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Kategorien</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">alle <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Kategorien</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">alle <span class="quarto-category-count">(1)</span></div><div class="category" data-category="HowToBlog">HowToBlog <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
 
@@ -234,6 +234,15 @@ window.Quarto = {
      <select id="listing-listing-sort" class="form-select" aria-label="Sortieren nach" onchange="window['quarto-listings']['listing-listing'].sort(this.options[this.selectedIndex].value, { order: this.options[this.selectedIndex].getAttribute('data-direction')})">
        <option value="" disabled="" selected="" hidden="">Sortieren nach</option>
        <option value="index" data-direction="asc">Voreinstellung</option>
+         <option value="listing-title" data-direction="asc">
+          Titel
+        </option>
+         <option value="listing-date-sort" data-direction="asc">
+          Datum - Datum (aufsteigend)
+        </option>
+         <option value="listing-date-sort" data-direction="desc">
+          Datum - Neueste
+        </option>
          <option value="listing-author" data-direction="asc">
           Autor:in
         </option>
@@ -245,19 +254,36 @@ window.Quarto = {
     </div>
 </div>
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1709760551543">
+<div class="quarto-post image-right" data-index="0" data-categories="HowToBlog" data-listing-date-sort="1705795200000" data-listing-file-modified-sort="1709761304874" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="192">
 <div class="thumbnail">
-<p><a href="./posts/test/index.html" class="no-external"></a></p><a href="./posts/test/index.html" class="no-external">
+<p><a href="./posts/anleitung_vorbereitung/index.html" class="no-external"></a></p><a href="./posts/anleitung_vorbereitung/index.html" class="no-external">
 <div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-</a><p><a href="./posts/test/index.html" class="no-external"></a></p>
+</a><p><a href="./posts/anleitung_vorbereitung/index.html" class="no-external"></a></p>
 </div>
 <div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./posts/anleitung_vorbereitung/index.html" class="no-external">HowToBlog #1: setup work environment</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./posts/anleitung_vorbereitung/index.html" class="no-external"></a>
+</div>
+<div class="listing-categories">
+<div class="listing-category" onclick="window.quartoListingCategory('HowToBlog'); return false;">
+HowToBlog
+</div>
+</div>
 <div class="listing-description">
-<a href="./posts/test/index.html" class="no-external"></a>
+<a href="./posts/anleitung_vorbereitung/index.html" class="no-external">You will need:</a>
 </div>
 </div>
 <div class="metadata">
-<p><a href="./posts/test/index.html" class="no-external"></a></p><a href="./posts/test/index.html" class="no-external">
+<a href="./posts/anleitung_vorbereitung/index.html" class="no-external">
+<div class="listing-date">
+21.01.2024
+</div>
+<div class="listing-author">
+Marcel Hanschmann
+</div>
 </a>
 </div>
 </div>
@@ -489,6 +515,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/MethodenKompetenzZentrum\.github\.io\/blog_mkz\.github\.io\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
@@ -523,7 +567,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
     });
   }
   const xrefs = window.document.querySelectorAll('a.quarto-xref');

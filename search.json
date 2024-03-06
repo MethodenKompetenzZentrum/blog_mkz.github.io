@@ -1,19 +1,5 @@
 [
   {
-    "objectID": "menu/curses/R_rookie/index.html",
-    "href": "menu/curses/R_rookie/index.html",
-    "title": "R für Rookies",
-    "section": "",
-    "text": "Hier folgen alle Informationen zu R für Rookies\nListe aller zugehörigen Posts"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog des MethodenKompetenzZentrums",
-    "section": "",
-    "text": "Sortieren nach\n       Voreinstellung\n         \n          Autor:in\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nKeine Treffer"
-  },
-  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Über uns",
@@ -21,10 +7,31 @@
     "text": "Dies ist der offizielle Blog des MethodenKompetenzZentrums der TU Chemnitz\nHier folgt eine Vorstellung des MKZ und des Inhalts des Blogs"
   },
   {
+    "objectID": "posts/anleitung_vorbereitung/index.html",
+    "href": "posts/anleitung_vorbereitung/index.html",
+    "title": "HowToBlog #1: setup work environment",
+    "section": "",
+    "text": "You will need:\n\ngit (https://git-scm.com/downloads)\nR (https://cran.r-project.org/)\nRStudio (https://posit.co/download/rstudio-desktop/)&lt;\nRTools (https://cran.r-project.org/bin/windows/Rtools/)\nQuarto (https://quarto.org/docs/get-started/)\n\nDownload and install software. If you already have some of it, then make sure everything is the latest version.\n\n\nWhen using Windows, install RStudio and RTools to C:\\\n(default path: C:\\program files\\ may cause errors\n\n\nin github:\n\nget invited to organisation and accept\n\n\n\nin RStudio:\n\ninstall needed packages\ncreate new Project\n\nuse version control and git\npaste git directory\n\nset git name, email in terminal:\n\ngit config –global user.email “your Email”\ngit config –global user.name “Your Name”\n(omit “–global” to set only for current project\n\ncreate pat in github, copy pat_string (save somewhere, because you can’t see it in github later\nset PAT: in console: gitcreds::gitcreds_set(), than insert pat string"
+  },
+  {
+    "objectID": "menu/curses/R_rookie/index.html",
+    "href": "menu/curses/R_rookie/index.html",
+    "title": "R für Rookies",
+    "section": "",
+    "text": "Hier folgen alle Informationen zu R für Rookies\nListe aller zugehörigen Posts"
+  },
+  {
     "objectID": "menu/projects/project_1/index.html",
     "href": "menu/projects/project_1/index.html",
     "title": "Projekt 1",
     "section": "",
     "text": "Hier folgen alle Informationen zu Projekt 1.\nListe aller zugehörigen Posts"
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog des MethodenKompetenzZentrums",
+    "section": "",
+    "text": "Sortieren nach\n       Voreinstellung\n         \n          Titel\n        \n         \n          Datum - Datum (aufsteigend)\n        \n         \n          Datum - Neueste\n        \n         \n          Autor:in\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nHowToBlog #1: setup work environment\n\n\n\n\n\n\nHowToBlog\n\n\n\n\n\n\n\n\n\n21.01.2024\n\n\nMarcel Hanschmann\n\n\n\n\n\n\nKeine Treffer"
   }
 ]
