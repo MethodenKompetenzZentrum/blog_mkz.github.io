@@ -17,3 +17,5 @@ about:
 Dies ist der offizielle Blog des MethodenKompetenzZentrums der TU Chemnitz
 
 Hier folgt eine Vorstellung des MKZ und des Inhalts des Blogs
+
+zeile test
