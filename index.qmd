@@ -8,8 +8,8 @@ about:
     - icon: tuc
       text: TU Chemnitz
       href: https://www.tu-chemnitz.de/hsw/mkz/
-  page-layout: full
-  title-block-banner: true
+page-layout: full
+title-block-banner: true
 ---
 
 ![](images/logo_mkz.jpg){width="500"}
