@@ -122,13 +122,6 @@ ul.task-list li input[type="checkbox"] {
     </ul>
   </li>
 </ul>
-            <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item compact">
-    <a class="nav-link" href="https://twitter.com"> <i class="bi bi-twitter" role="img">
-</i> 
-<span class="menu-text"></span></a>
-  </li>  
-</ul>
           </div> <!-- /navcollapse -->
           <div class="quarto-navbar-tools">
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -192,57 +185,71 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<blockquote class="blockquote">
+<div class="grid">
+<div class="g-col-12 g-col-12-header">
 <p><strong>#1 create Files</strong></p>
-<div>
-<ul>
-<li><p>go to posts directory, create new folder, name it unique</p></li>
-<li><p>-&gt;New Blank File -&gt; Quarto Doc… -&gt; index.qmd</p></li>
-</ul>
-<p><img src="new_file.png" class="img-fluid" width="342"></p>
 </div>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>#2 Metadata</strong></p>
-<p>add Metadatablock add file begin. blog begins and ends with “—”</p>
-<p>copy and edit:</p>
+<div class="g-col-6 g-col-6-body">
+<ul>
+<li>go to posts directory, create new folder, name it unique</li>
+<li>-&gt;New Blank File -&gt; Quarto Doc… -&gt; index.qmd</li>
+</ul>
+</div>
+<div class="g-col-6">
+<p><img src="new_file.png" class="img-fluid" width="424"></p>
+</div>
+</div>
+<div class="grid">
+<div class="g-col-12 g-col-12-header">
+<p><strong>#2 add Metadata</strong></p>
+</div>
+<div class="g-col-6 g-col-6-body">
+<ul>
+<li>add metadata block to file begin</li>
+<li>block begins and ends with “—”</li>
+</ul>
+</div>
+<div class="g-col-6">
 <pre><code>---
-title: "titel"
-description: "description"
-author: "author"
-date: "2024-01-11"
-categories: [HowToBlog]
-doi: xx.xxxx/xxxxxx
+title: "titel"\
+description: "description" author: "author"\
+date: "2024-01-11"\
+categories: \[HowToBlog\]\
+doi: xx.xxxx/xxxxxx\
 freeze: true
 ---</code></pre>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>#3 content</strong></p>
+</div>
+</div>
+<div class="grid">
+<div class="g-col-12 g-col-12-header">
+<p><strong>#3 add content</strong></p>
+</div>
+<div class="g-col-6 g-col-6-body">
 <ul>
-<li><p>add content as you wish,</p>
-<ul>
-<li><p>RStudio provides various options to format your input, for more detailed information to quarto look here: <a href="https://quarto.org/docs/guide/" class="uri">https://quarto.org/docs/guide/</a></p></li>
-<li><p>add additional files and images in post directory as needed</p></li>
-</ul></li>
-<li><p>to preview output: save all files then Render Website</p></li>
+<li>add content as you wish RStudio provides various options to format your input, for more detailed information to quarto look here: <a href="https://quarto.org/docs/guide/" class="uri">https://quarto.org/docs/guide/</a></li>
+<li>add additional files and images in post directory as needed</li>
+<li>to preview output: save all files then Render Website</li>
 </ul>
+</div>
+<div class="g-col-6">
 <p><img src="render.png" class="img-fluid" width="424"></p>
-</blockquote>
-<blockquote class="blockquote">
-<p><strong>#4 push</strong></p>
-<p>to publish your post you have to:</p>
-<ul>
-<li><p>save your files</p></li>
-<li><p>commit your files:</p>
+</div>
+</div>
+<div class="grid">
+<div class="g-col-12 g-col-12-header">
+<p><strong>#4 publish</strong></p>
+</div>
+<div class="g-col-6 g-col-6-body">
 <ul>
 <li><p>check only your post directory and its content</p></li>
 <li><p>write meaningful commit message for version control</p></li>
 <li><p>click commit, if success then close commit window</p></li>
-</ul></li>
-<li><p>push</p></li>
 </ul>
-<p><img src="git.png" class="img-fluid" width="409"></p>
-</blockquote>
+</div>
+<div class="g-col-6">
+<p><img src="git.png" class="img-fluid" width="424"></p>
+</div>
+</div>
 
 
 
