@@ -5,6 +5,7 @@ author: "Marcel Hanschmann"
 date: "2024-01-21"
 image: render.png
 subtitle: "sub title"
+doi: xx.xxxx/xxxxxx
 
 categories: [HowToBlog]
 freeze: true
@@ -31,8 +32,9 @@ freeze: true
 > add Metadatablock add file begin. blog begins and ends with "---"
 >
 > you need: titel, description, author ...
-
-> `---
+>
+> ```         
+> ---
 > title: "titel"
 > description: "description"
 > author: "author"
@@ -40,7 +42,8 @@ freeze: true
 > categories: [HowToBlog]
 > doi: xx.xxxx/xxxxxx
 > freeze: true
-> ---`
+> ---
+> ```
 
 > **#3 content**
 >
@@ -64,6 +67,6 @@ freeze: true
 >
 >     -   write meaningful commit message for version control
 >
->     -   click commit
+>     -   click commit, if success then close commit window
 >
 > -   push
