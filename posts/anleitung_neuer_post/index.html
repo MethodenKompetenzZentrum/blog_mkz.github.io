@@ -171,6 +171,14 @@ ul.task-list li input[type="checkbox"] {
     </div>
     
       
+      <div>
+      <div class="quarto-title-meta-heading">Doi</div>
+      <div class="quarto-title-meta-contents">
+        <p class="doi">
+          <a href="https://doi.org/xx.xxxx/xxxxxx">xx.xxxx/xxxxxx</a>
+        </p>
+      </div>
+    </div>
     </div>
     
   
@@ -201,9 +209,15 @@ ul.task-list li input[type="checkbox"] {
 <p><strong>#2 Metadata</strong></p>
 <p>add Metadatablock add file begin. blog begins and ends with “—”</p>
 <p>you need: titel, description, author …</p>
-</blockquote>
-<blockquote class="blockquote">
-<p><code>--- title: "titel" description: "description" author: "author" date: "2024-01-11" categories: [HowToBlog] doi: xx.xxxx/xxxxxx freeze: true ---</code></p>
+<pre><code>---
+title: "titel"
+description: "description"
+author: "author"
+date: "2024-01-11"
+categories: [HowToBlog]
+doi: xx.xxxx/xxxxxx
+freeze: true
+---</code></pre>
 </blockquote>
 <blockquote class="blockquote">
 <p><strong>#3 content</strong></p>
@@ -225,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li><p>check only your post directory and its content</p></li>
 <li><p>write meaningful commit message for version control</p></li>
-<li><p>click commit</p></li>
+<li><p>click commit, if success then close commit window</p></li>
 </ul></li>
 <li><p>push</p></li>
 </ul>
