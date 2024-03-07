@@ -4,7 +4,7 @@ description: "publish a new blog post"
 author: "Marcel Hanschmann"
 date: "2024-01-21"
 image: render.png
-subtitle: "sub title"
+
 doi: xx.xxxx/xxxxxx
 
 categories: [HowToBlog]
@@ -19,10 +19,6 @@ freeze: true
 >
 > -   -\>New Blank File -\> Quarto Doc... -\> index.qmd
 >
-> </div>
->
-> <div>
->
 > ![](new_file.png){width="342"}
 >
 > </div>
@@ -31,7 +27,7 @@ freeze: true
 >
 > add Metadatablock add file begin. blog begins and ends with "---"
 >
-> you need: titel, description, author ...
+> copy and edit:
 >
 > ```         
 > ---
@@ -54,6 +50,8 @@ freeze: true
 >     -   add additional files and images in post directory as needed
 >
 > -   to preview output: save all files then Render Website
+>
+> ![](render.png){width="424"}
 
 > **#4 push**
 >
@@ -70,3 +68,5 @@ freeze: true
 >     -   click commit, if success then close commit window
 >
 > -   push
+>
+> ![](git.png){width="409"}
