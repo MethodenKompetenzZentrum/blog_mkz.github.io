@@ -20,9 +20,7 @@ website:
         menu: 
           - text: "R [beginner]"
             href: menu/curses/R_rookie/index.qmd
-    right:
-      - icon: twitter
-        href: https://twitter.com
+
     pinned: true
 format:
   html:
