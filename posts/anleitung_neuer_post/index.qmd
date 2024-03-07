@@ -1,20 +1,69 @@
 ---
 title: "HowToBlog #2: publish new post"
+description: "publish a new blog post"
 author: "Marcel Hanschmann"
 date: "2024-01-21"
-description: "publish a new blog post"
+image: render.png
+subtitle: "sub title"
+
 categories: [HowToBlog]
 freeze: true
 ---
 
-1.  create new Folder in posts directory
+> **#1 create Files**
+>
+> <div>
+>
+> -   go to posts directory, create new folder, name it unique
+>
+> -   -\>New Blank File -\> Quarto Doc... -\> index.qmd
+>
+> </div>
+>
+> <div>
+>
+> ![](new_file.png){width="342"}
+>
+> </div>
 
-2.  create new index.qmd file
+> **#2 Metadata**
+>
+> add Metadatablock add file begin. blog begins and ends with "---"
+>
+> you need: titel, description, author ...
 
-3.  add Metadata to index.qmd (or copy and edit from other post)
+> `---
+> title: "titel"
+> description: "description"
+> author: "author"
+> date: "2024-01-11"
+> categories: [HowToBlog]
+> doi: xx.xxxx/xxxxxx
+> freeze: true
+> ---`
 
-4.  add content
+> **#3 content**
+>
+> -   add content as you wish,
+>
+>     -   RStudio provides various options to format your input, for more detailed information to quarto look here: <https://quarto.org/docs/guide/>
+>
+>     -   add additional files and images in post directory as needed
+>
+> -   to preview output: save all files then Render Website
 
-5.  ...
-
-6.  profit
+> **#4 push**
+>
+> to publish your post you have to:
+>
+> -   save your files
+>
+> -   commit your files:
+>
+>     -   check only your post directory and its content
+>
+>     -   write meaningful commit message for version control
+>
+>     -   click commit
+>
+> -   push

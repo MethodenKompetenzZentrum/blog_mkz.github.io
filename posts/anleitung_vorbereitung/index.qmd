@@ -1,7 +1,8 @@
 ---
 title: "HowToBlog #1: setup work environment"
+description: "tutorial to install and config needed software"
 author: "Marcel Hanschmann"
-date: "2024-01-21"
+date: "2024-01-11"
 categories: [HowToBlog]
 doi: xx.xxxx/xxxxxx
 freeze: true
